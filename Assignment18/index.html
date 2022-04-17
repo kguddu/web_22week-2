@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #header{
+       
+        text-align: center;
+        margin-top: 20%;
+        
+      }
+      h2{
+        text-align: center;
+      }
+    </style>
+    
+</head>
+<body>
+
+    <h1
+     id="header" ondblclick="myFunction()">Geek.</h1>
+
+    <h2>duble click and see the magic</h2>
+
+<script>
+  const header=document.getElementById('header')
+function myFunction() {
+  document.getElementById("header").innerText = "GeekGeek ";
+  header.style.color='green'
+  
+}
+</script>
+    
+</body>
+</html>
