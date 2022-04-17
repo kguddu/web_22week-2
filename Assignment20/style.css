@@ -1,0 +1,40 @@
+body{
+    background:rgb(244, 149, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  h1{
+     
+    margin-right: 
+    60%;
+ }
+.board{
+    padding-top:100px;
+    height: 300px;
+    width: 300px;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.cell{
+    border-bottom: 5px solid white;
+    border-right:5px solid white ;
+    font-size: 50px;
+    text-align: center;
+    line-height: 95px;
+    user-select: none;
+    color: white;
+}
+.cell:nth-child(3n){
+    border-right: none;
+
+}
+.cell:nth-child(n+7){
+    border-bottom: none;
+
+}
+.cell.highlights{
+    background-color: rgb(122, 254, 122);
+}
